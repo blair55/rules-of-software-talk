@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rules of Software</title>
+    <meta name="description" content="">
+    <meta name="author" content="Nick Blair">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/Sky.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<h2>(Some) Rules of Software</h2>
+<aside class="notes">
+meta talk, not really about any work that's going on<br/>
+more like observations, not like tdd<br/>
+these rules come from software as I go through I'll try to apply them more generally to our business and in general<br/>
+hopefully you'll find it interesting<br/>
+</aside>
+</section>
+<section >
+<section >
+<h2>Occam's Razor</h2>
+<aside class="notes">
+quite popular, william of ockham 14th century<br/>
+more like an applicable rule or principle for problem solving<br/>
+if you have competing theories, first investigate the one with the least assumptions<br/>
+example?<br/>
+explain razor<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>Simplest answer is usually correct</p>
+</blockquote>
+</section>
+</section>
+<section >
+<section >
+<h2>Hanlon's razor</h2>
+<aside class="notes">
+extension of Occam's Razor<br/>
+never attribute to malice what can be explained by stupidity<br/>
+has to be remembered in software when people are asking for requirements or users creating errors<br/>
+but important because we have to work and get on with each other as people<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>Cock-up before conspiracy</p>
+</blockquote>
+</section>
+</section>
+<section >
+<section >
+<h2>Eagleson's Law</h2>
+<aside class="notes">
+particularly pertinent<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>Any code of your own that you haven't looked at for six or more months might as well have been written by someone else</p>
+</blockquote>
+<aside class="notes">
+documentation vs descriptive, declarative code<br/>
+don't make it difficult for the next person because it could be you<br/>
+</aside>
+</section>
+<section data-transition="fade">
+<p><strong>What idiot wrote this?</strong></p>
+<p><img src="images/eagleson1.png" alt="Eagleson1" /></p>
+</section>
+<section data-transition="fade">
+<p><strong>What idiot wrote this?</strong></p>
+<p><img src="images/eagleson2.png" alt="Eagleson2" /></p>
+</section>
+</section>
+<section >
+<section >
+<h2>Conways' Law</h2>
+<aside class="notes">
+Conway's law is about system design,<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>Organisations which design systems ... are constrained to produce designs which are copies of the organisation</p>
+</blockquote>
+<aside class="notes">
+take advantage of it<br/>
+how do you design a large system?<br/>
+going to look like your business.<br/>
+Organise your business around your software - netflix<br/>
+small autonomous teams that enforce modularity<br/>
+</aside>
+</section>
+</section>
+<section >
+<section >
+<h2>Parkinson's Law</h2>
+<aside class="notes">
+Student effect<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>work expands so as to fill the time available for its completion</p>
+</blockquote>
+<aside class="notes">
+and then some<br/>
+</aside>
+</section>
+</section>
+<section >
+<section >
+<h2>Hofstadter's Law</h2>
+<aside class="notes">
+Planning Fallacy / 90-90<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>It always takes longer than you expect, even when you take into account Hofstadter's Law</p>
+</blockquote>
+</section>
+<section >
+<h2>Agile?</h2>
+<aside class="notes">
+agile way is to try to be more reactive<br/>
+don't plan too far in advance<br/>
+get real feedback<br/>
+</aside>
+</section>
+<section >
+<h2>Simplicity</h2>
+<aside class="notes">
+the art of maximizing the amount of work not done<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>I would have written a shorter letter, but I did not have the time.</p>
+</blockquote>
+<p><strong>Pascal</strong></p>
+<aside class="notes">
+french mathematician<br/>
+</aside>
+</section>
+<section >
+<blockquote>
+<p>Brevity is the soul of wit</p>
+</blockquote>
+<p><strong>Shakespeare</strong></p>
+</section>
+</section>
+<section >
+<section >
+<h2>Dunning-Kruger Effect</h2>
+<aside class="notes">
+cognitive bias<br/>
+overestimate your ability<br/>
+fail to recognise your own lack of skill<br/>
+</aside>
+</section>
+<section >
+<h2>Imposter Syndrome</h2>
+<aside class="notes">
+underestimate your ability<br/>
+even in the face of evidence<br/>
+how developers get there<br/>
+</aside>
+</section>
+<section >
+<p><img src="images/dkis.png" alt="dkis" /></p>
+</section>
+</section>
+<section >
+<section >
+<h2>Conclusions</h2>
+</section>
+<section >
+<blockquote>
+<p>cock-up before conspiracy</p>
+</blockquote>
+</section>
+<section >
+<blockquote>
+<p>small teams FTW</p>
+</blockquote>
+</section>
+<section >
+<blockquote>
+<p>don't plan too far ahead</p>
+</blockquote>
+</section>
+<section >
+<blockquote>
+<p>be careful of confidence</p>
+</blockquote>
+</section>
+<section >
+<blockquote>
+<p>recognise your own experience</p>
+</blockquote>
+</section>
+</section>
+<section >
+<h2>Fin.</h2>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+
