@@ -50,34 +50,33 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section >
-<h2>(Some) Rules of Software</h2>
+<p><em>Some</em></p>
+<h2>Rules of Software</h2>
 <aside class="notes">
-meta talk, not really about any work that's going on<br/>
+not really about any work<br/>
 more like observations, not like tdd<br/>
 these rules come from software as I go through I'll try to apply them more generally to our business and in general<br/>
 hopefully you'll find it interesting<br/>
 </aside>
 </section>
 <section >
-<section >
-<h2>Occam's Razor</h2>
+<h3>Occam's Razor</h3>
+<blockquote>
+<p>The simplest answer is usually correct</p>
+</blockquote>
 <aside class="notes">
 quite popular, william of ockham 14th century<br/>
 more like an applicable rule or principle for problem solving<br/>
 if you have competing theories, first investigate the one with the least assumptions<br/>
-example?<br/>
 explain razor<br/>
 </aside>
 </section>
 <section >
+<section data-transition="fade">
+<h3>Hanlon's Razor</h3>
 <blockquote>
-<p>Simplest answer is usually correct</p>
+<p>Don't attribute to malice what can be explained by stupidity</p>
 </blockquote>
-</section>
-</section>
-<section >
-<section >
-<h2>Hanlon's razor</h2>
 <aside class="notes">
 extension of Occam's Razor<br/>
 never attribute to malice what can be explained by stupidity<br/>
@@ -85,7 +84,8 @@ has to be remembered in software when people are asking for requirements or user
 but important because we have to work and get on with each other as people<br/>
 </aside>
 </section>
-<section >
+<section data-transition="fade">
+<h3>Hanlon's Razor</h3>
 <blockquote>
 <p>Cock-up before conspiracy</p>
 </blockquote>
@@ -93,79 +93,69 @@ but important because we have to work and get on with each other as people<br/>
 </section>
 <section >
 <section >
-<h2>Eagleson's Law</h2>
-<aside class="notes">
-particularly pertinent<br/>
-</aside>
+<h3>Eagleson's Law</h3>
+</section>
+<section data-transition="fade">
+<p><em>What idiot wrote this?</em></p>
+<p><img src="images/eagleson1.png" alt="Eagleson1" /></p>
+</section>
+<section data-transition="fade">
+<p><em>What idiot wrote this?</em></p>
+<p><img src="images/eagleson2.png" alt="Eagleson2" /></p>
 </section>
 <section >
+<h3>Eagleson's Law</h3>
 <blockquote>
 <p>Any code of your own that you haven't looked at for six or more months might as well have been written by someone else</p>
 </blockquote>
 <aside class="notes">
+particularly pertinent<br/>
 documentation vs descriptive, declarative code<br/>
 don't make it difficult for the next person because it could be you<br/>
 </aside>
 </section>
-<section data-transition="fade">
-<p><strong>What idiot wrote this?</strong></p>
-<p><img src="images/eagleson1.png" alt="Eagleson1" /></p>
-</section>
-<section data-transition="fade">
-<p><strong>What idiot wrote this?</strong></p>
-<p><img src="images/eagleson2.png" alt="Eagleson2" /></p>
-</section>
 </section>
 <section >
-<section >
-<h2>Conways' Law</h2>
-<aside class="notes">
-Conway's law is about system design,<br/>
-</aside>
-</section>
-<section >
+<h3>Conway's Law</h3>
 <blockquote>
 <p>Organisations which design systems ... are constrained to produce designs which are copies of the organisation</p>
 </blockquote>
 <aside class="notes">
-take advantage of it<br/>
-how do you design a large system?<br/>
-going to look like your business.<br/>
-Organise your business around your software - netflix<br/>
-small autonomous teams that enforce modularity<br/>
-</aside>
-</section>
-</section>
-<section >
-<section >
-<h2>Parkinson's Law</h2>
-<aside class="notes">
-Student effect<br/>
+Not necessarily a problem until your organisation becomes large & complex,<br/>
+large complex organisation = large complex software<br/>
+secret to large complex software is to build lots of small simple pieces<br/>
+organisations have to adopt modularity to achieve this<br/>
+netflix/amazon have small autonomous teams enforces modularity<br/>
+result is that they are very flexible<br/>
+break the problem down<br/>
 </aside>
 </section>
 <section >
+<h3>Parkinson's Law</h3>
 <blockquote>
-<p>work expands so as to fill the time available for its completion</p>
+<p>Work expands so as to fill the time available for its completion</p>
 </blockquote>
 <aside class="notes">
+Student effect<br/>
 and then some<br/>
 </aside>
 </section>
-</section>
 <section >
 <section >
-<h2>Hofstadter's Law</h2>
-<aside class="notes">
-Planning Fallacy / 90-90<br/>
-</aside>
-</section>
-<section >
+<h3>Hofstadter's Law</h3>
 <blockquote>
 <p>It always takes longer than you expect, even when you take into account Hofstadter's Law</p>
 </blockquote>
+<aside class="notes">
+Planning Fallacy / 90-90<br/>
+recursive<br/>
+</aside>
 </section>
 <section >
-<h2>Agile?</h2>
+<h3>Agile</h3>
+<blockquote>
+<p>Learn as you go</p>
+</blockquote>
 <aside class="notes">
 agile way is to try to be more reactive<br/>
 don't plan too far in advance<br/>
@@ -173,80 +163,83 @@ get real feedback<br/>
 </aside>
 </section>
 <section >
-<h2>Simplicity</h2>
-<aside class="notes">
-the art of maximizing the amount of work not done<br/>
-</aside>
+<h3>Simplicity</h3>
+<blockquote>
+<p>The art of maximizing the amount of work not done</p>
+</blockquote>
 </section>
 <section >
 <blockquote>
-<p>I would have written a shorter letter, but I did not have the time.</p>
+<p>I would have written a shorter letter, but I did not have the time</p>
 </blockquote>
-<p><strong>Pascal</strong></p>
+<p><em>Pascal</em></p>
 <aside class="notes">
 french mathematician<br/>
+paradoxical<br/>
 </aside>
 </section>
 <section >
 <blockquote>
 <p>Brevity is the soul of wit</p>
 </blockquote>
-<p><strong>Shakespeare</strong></p>
+<p><em>Shakespeare</em></p>
 </section>
 </section>
 <section >
 <section >
-<h2>Dunning-Kruger Effect</h2>
+<h3>Dunning-Kruger Effect</h3>
 <aside class="notes">
 cognitive bias<br/>
 overestimate your ability<br/>
 fail to recognise your own lack of skill<br/>
+bad because<br/>
 </aside>
 </section>
 <section >
-<h2>Imposter Syndrome</h2>
+<h3>Imposter Syndrome</h3>
 <aside class="notes">
+feeling that someone will find you out<br/>
 underestimate your ability<br/>
 even in the face of evidence<br/>
-how developers get there<br/>
+bad because<br/>
 </aside>
 </section>
 <section >
 <p><img src="images/dkis.png" alt="dkis" /></p>
+<aside class="notes">
+confident? be cautious<br/>
+how developers get IS<br/>
+IS? you definitely aren't DK<br/>
+</aside>
 </section>
 </section>
 <section >
 <section >
-<h2>Conclusions</h2>
+<h3>Conclusions</h3>
 </section>
 <section >
 <blockquote>
-<p>cock-up before conspiracy</p>
+<p>Cock-up before conspiracy</p>
 </blockquote>
 </section>
 <section >
 <blockquote>
-<p>small teams FTW</p>
+<p>Small teams decompose the problem</p>
 </blockquote>
 </section>
 <section >
 <blockquote>
-<p>don't plan too far ahead</p>
+<p>Don't plan too far ahead</p>
 </blockquote>
 </section>
 <section >
 <blockquote>
-<p>be careful of confidence</p>
-</blockquote>
-</section>
-<section >
-<blockquote>
-<p>recognise your own experience</p>
+<p>Life-long learning</p>
 </blockquote>
 </section>
 </section>
 <section >
-<h2>Fin.</h2>
+<h3>Fin.</h3>
 </section>
 
 
